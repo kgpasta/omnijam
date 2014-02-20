@@ -1,0 +1,23 @@
+#container
+{
+	height: 100%;
+	padding:2%;
+	margin:2%;
+}
+#header{
+	background-color: purple;
+	height:100%;
+	color:white;
+	padding: 1%;
+}
+#header h1{
+	margin:0%;
+}
+#inner{
+	padding-left:7%;
+	padding-right:7%;
+}
+#navbar a{
+	color:white;
+	font-size: 120%;
+}
