@@ -1,12 +1,6 @@
-#container
-{
-	height: 100%;
-	padding:2%;
-	margin:2%;
-}
 #header{
 	background-color: purple;
-	height:100%;
+	height:auto;
 	color:white;
 	padding: 1%;
 }
