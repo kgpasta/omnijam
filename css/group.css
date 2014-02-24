@@ -1,0 +1,26 @@
+html,body{
+	height:100%;
+}
+#groups{
+	border:3px solid black;
+	height:100%;
+}
+.padGrp {
+	padding-left:30px;
+}
+#sessions{
+	border:3px solid black;
+	height:100%;
+}
+.inline {
+	float:left;
+}
+.padSesh {
+	padding-left:15px;
+}
+#collabDrop, p{
+	padding-left:3px;
+}
+#container {
+	height:90%;
+}
