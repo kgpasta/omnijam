@@ -1,25 +1,30 @@
-html,body{
-	height:100%;
-}
+
 #chatBox{
 	border:3px solid black;
 	height:100%;
 }
 #trackSpace{
-	border:3px solid black;
+	border:2px solid black;
 	height:100%;
 }
-#tracks{
-	height:70%;
+#allTracks{
+	height:auto;
 }
 #trackControl{
 	text-align: center;
-	height:30%;
+	height:10%;
+	border:3px solid black;
 }
 #trackControl input{
-	height:20%;
-	width:20%;
+	height:15%;
+	width:15%;
 }
-#container {
-	height:90%;
+#subBody {
+	height:89%;
+}
+#sessionTitle{
+	padding-left:5%;
+}
+#sessionTitle h3{
+	margin:0%;
 }
