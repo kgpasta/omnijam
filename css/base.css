@@ -1,17 +1,16 @@
 #header{
 	background-color: purple;
-	height:auto;
+	height:11%;
 	color:white;
-	padding: 1%;
+	padding:1% 5% 1% 5%;
 }
-#header h1{
+#header h1,h4{
 	margin:0%;
-}
-#inner{
-	padding-left:7%;
-	padding-right:7%;
 }
 #navbar a{
 	color:white;
 	font-size: 120%;
+}
+html,body{
+	height:100%;
 }
