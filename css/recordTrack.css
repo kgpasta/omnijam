@@ -8,7 +8,7 @@
 	height:100%;
 }
 #allTracks{
-	height:auto;
+
 }
 #trackControl{
 	text-align: center;
@@ -24,6 +24,7 @@
 }
 #sessionTitle{
 	padding-left:5%;
+	height:5%;
 }
 #sessionTitle h3{
 	margin:0%;
