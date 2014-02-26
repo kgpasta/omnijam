@@ -1,11 +1,41 @@
 var RecordTrack = (function($){
 	var createTrack = function(){
 		$("#addTrack").on("click", function(){
-			$(this).attr("src","assets/icons/Record-Normal-icon.png");
-/*			$(this).attr("id","recordTrack");
+			$(this).hide();
+			$("#stop").hide();
+			$('#record').show();
+/*
+			$(this).attr("id","recordTrack");
 			$("#recordTrack").bind('click',handleRecord);*/
 			$(this).load();
 			$("#newTrack").show();
+		});
+	},
+	recordTrack = function(){
+		$("#record").on("click",function(){
+			$(this).hide();
+			$("addTrack").hide();
+			$("#stop").show();
+		});
+	},
+	stopTrack = function(){
+		$("#stop").on("click",function(){
+			$(this).hide();
+			$("#record").show();
+		});
+	},
+	trashTrack = function(){
+	},
+	playTrack = function(){
+		$("#play").on("click",function(){
+			$(this).hide();
+			$("#pause").show();
+		});
+	},
+	pauseTrack = function(){
+		$("#pause").on("click",function(){
+			$(this).hide();
+			$("#play").show();
 		});
 	},
 	handleDragStart = function(e){
@@ -51,7 +81,14 @@ var RecordTrack = (function($){
 	init = function(){
 		$(document).ready(function(){
 			$("#newTrack").hide();
+			$("#record").hide();
+			$("#stop").hide();
+			$("#pause").hide();
 			createTrack();
+			recordTrack();
+			stopTrack();
+			playTrack();
+			pauseTrack();
 
 			//Drag and drop Event Handling
 			$("#newTrack").bind('dragstart',handleDragStart);
