@@ -1,18 +1,26 @@
 #header{
 	background-color: purple;
-	height:11%;
+	height:auto;
 	color:white;
 	padding:1% 5% 1% 5%;
 }
 #header h1,h4{
 	margin:0%;
 }
-#navbar {
-	padding-top:10px;
-}
-#navbar a{
+.logo>a{
 	color:white;
-	font-size: 120%;
+}
+.logo>a:hover{
+	text-decoration: none !important;
+}
+.navbar-nav>li>a{
+	color:white;
+	font-size:110%;	
+}
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus{
+	color:gray;
+	background-color: transparent !important;
 }
 html,body{
 	height:100%;
