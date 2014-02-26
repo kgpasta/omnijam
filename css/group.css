@@ -1,12 +1,12 @@
 #groups{
-	border:3px solid black;
+	#border:3px solid black;
 	height:100%;
 }
 .padGrp {
 	padding-left:30px;
 }
 #sessions{
-	border:3px solid black;
+	#border:3px solid black;
 	height:100%;
 }
 .inline {
@@ -20,4 +20,9 @@
 }
 #container {
 	height:90%;
+}
+#collaborators{
+	padding-top: 30px;
+	padding-right: 6px;
+	float:right;
 }

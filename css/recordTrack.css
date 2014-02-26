@@ -1,12 +1,11 @@
 
 #chatBox{
 	height:100%;
-	border:1px solid black;
-	background-color: #F4F4F4;
+	#border:1px solid black;
 }
 #trackSpace{
 	height:100%;
-	border:1px solid black;
+	#border:1px solid black;
 	background-color: white;
 	position:relative;
 }
@@ -16,10 +15,13 @@
 	height:auto;
 	margin:2% 25% 0% 25%;
 }
-#trackControl input{
-	height:40%;
-	width:40%;
-
+#trackControl span{
+	font-size:40px;
+	color:#454545;
+}
+#trackControl span:hover{
+	color:teal;
+	cursor: pointer;
 }
 #subBody {
 	height:88%;
