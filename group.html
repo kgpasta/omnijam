@@ -12,36 +12,31 @@
 	<body>
 		
 		<div class = 'row' id = 'header'>
-				<div class = 'col-md-9'>
-					<h1>Omnijam</h1>
-				</div>
-				<div id = 'navbar'>
-					<div class = 'col-md-1'>
-						<a href = 'group.html'>Username</a>
-					</div>
-					<div class = 'col-md-1'>
-
-						<div class="dropdown">
-						  <a data-toggle="dropdown" href="#">
-						  	<center><a href="">
-						  		<span class="glyphicon glyphicon-globe"></span>
-						  		<b class="caret"></b>
-						  	</a></center>
-						  </a>
-						  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" id="collabDrop">
-						    <a href=""><p>Krish Suresh</p></a>
-						  </ul>
-						</div>
-
-					</div>
-					<div class = 'col-md-1'>
-						<a href = 'index.html'> Logout</a>
-					</div>
-				</div>
+			<div class = 'col-md-9'>
+				<h1 class='logo'><a href="index.html">Omnijam</a></h1>
+			</div>
+			<div class = 'col-md-3'>
+				<nav role="navigation">
+					<ul class ='nav navbar-nav'>
+						<li><a href='group.html'>Username</a></li>
+						<li class = 'dropdown'>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span class = 'glyphicon glyphicon-globe'></span>
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+					            <li><a>Notification 1</a></li>
+					            <li><a>Notification 2</a></li>
+					            <li><a>Notification 3</a></li>
+					            <li><a>Notification 4</a></li>
+					        </ul>
+				        </li>
+						<li><a href= 'index.html'>Logout</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
-
 		<div class='row' id = 'container'>
-
 			<div class = 'col-md-2' id = 'groups'>
 				<div class="row padGrp" style="padding-top:15px;">
 					<!-- Create group button trigger modal -->
@@ -50,17 +45,16 @@
 					</button>
 				</div>
 				<div class="row padGrp">
-					<a href=""><h3>Group 1</h3></a>
+					<a href=""><h3>Respected Knightz</h3></a>
 					<a href=""><h3>Group 2</h3></a>
 					<a href=""><h3>Group 3</h3></a>
 					<a href=""><h3>Group 4</h3></a>
 				</div>
 			</div>
-
 			<div class = 'col-md-10' id='sessions'>
 				<!-- figure out how to make this all in one row...also look at recordTrack to see what is in div rows -->
 				<div class="row padSesh">
-					<div class="inline"><h1>Group 4</h1></div>
+					<div class="inline"><h1>Respected Knightz</h1></div>
 					<div class="dropdown inline" style="padding-top:30px; padding-right:100px; float:right;">
 					  <a data-toggle="dropdown" href="#">
 					  	Collaborators 
@@ -80,7 +74,7 @@
 					<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sessionModal">
 	  					Create session
 					</button>
-					<a href=""><h3>Session 1</h3></a>
+					<a href="recordTrack.html"><h3>Session 1</h3></a>
 					<a href=""><h3>Session 2</h3></a>
 					<a href=""><h3>Session 3</h3></a>
 					<a href=""><h3>Session 4</h3></a>
