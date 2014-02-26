@@ -15,9 +15,13 @@
 	</head>
 	<body>
 		<div class = 'row' id = 'header'>
-			<div class = 'col-md-9'>
-				<h1 class='logo'><a href="index.html">Omnijam</a></h1>
+			<!--div class = 'col-md-9'>
+				<h1 class='logo'><a href="index.html"><img src = 'assets/icons/logo.png'/></a></h1>
+			</div-->
+			<div class = 'col-md-2 logo'>
+				<a href="index.html"><img src = 'assets/icons/logoWhite.png'/></a>
 			</div>
+			<div class ='col-md-7'></div>
 			<div class = 'col-md-3'>
 				<nav role="navigation">
 					<ul class ='nav navbar-nav'>
@@ -39,7 +43,7 @@
 				</nav>
 			</div>
 		</div>
-		<div class='row' id ='subBody'><!-- everything below the header!-->
+		<div class='row' id='subBody'><!-- everything below the header!-->
 			<div class = 'col-md-9' id='trackSpace'><!-- where track stuff happens !-->
 				<div class="row col-md-12" id="sessionTitle">
 					<h3>Respected Knightz | Session 1</h3>
@@ -59,13 +63,19 @@
 				
 					<div class = 'row' id = 'trackControl'>
 						<div class = 'col-md-4'>
-							<input type = 'image' src = 'assets/icons/Add-icon.png' alt ='add/record' id ="addTrack"/>
+							<!--input type = 'image' src = 'assets/icons/Add-icon.png' alt ='add/record' id ="addTrack"/-->
+							<span id ='addTrack' class = 'glyphicon glyphicon-plus'></span>
+							<span id='record' class='glyphicon glyphicon-record'></span>
+							<span id='stop' class='glyphicon glyphicon-stop'></span>
 						</div>
 						<div class = 'col-md-4'>
-							<input type = 'image' src = 'assets/icons/play_button.png' alt ='Play'/>
+							<!--input type = 'image' src = 'assets/icons/play_button.png' alt ='Play'/-->
+							<span id ='play' class = 'glyphicon glyphicon-play'></span>
+							<span id ='pause' class = 'glyphicon glyphicon-pause'></span>
 						</div>
 						<div class = 'col-md-4'>
-							<input type = 'image' src = 'assets/icons/Garbage_bin_icon.png' alt ='Trash'/>
+							<!--input type = 'image' src = 'assets/icons/Garbage_bin_icon.png' alt ='Trash'/-->
+							<span class = 'glyphicon glyphicon-trash'></span>
 						</div>
 					</div>
 				</div>
@@ -78,5 +88,3 @@
 	</body>
 </html>
 
-
-		</div>
