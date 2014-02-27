@@ -2,6 +2,7 @@
 	background-color: #303030;
 	height:auto;
 	padding:0% 0% 0% 3%;
+	margin:0px !important;
 }
 #header h1,h4{
 	margin:0%;
@@ -38,6 +39,7 @@ html,body{
 	height:100%;
 	color:#303030;
 	font-family: PT Sans, Helvetica;
+	width:100%;
 }
 a{
 	color:#303030;
