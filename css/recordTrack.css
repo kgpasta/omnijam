@@ -1,7 +1,27 @@
 
 #chatBox{
 	height:100%;
-	#border:1px solid black;
+	border:1px solid black;
+	padding:0%;
+}
+#chatInput{
+	text-align: center;
+	width:100%;
+	padding-left: 6%;
+	padding-right: 6%;
+	position:absolute;
+	bottom:1%;
+}
+textarea{
+	width:100%;
+	padding-left: 0%;
+	margin:0%;
+}
+#chatText{
+	width:100%;
+	padding: 3% 6% 3% 6%;
+	height:85%;
+	overflow-y:scroll;
 }
 #trackSpace{
 	height:100%;
@@ -9,7 +29,6 @@
 	background-color: white;
 	position:relative;
 }
-
 #trackControl{
 	text-align: center;
 	height:auto;
@@ -24,16 +43,17 @@
 	cursor: pointer;
 }
 #subBody {
-	height:88%;
+	height:90%;
 	padding-left:3%;
 	padding-right:3%;
+	padding-top: 1%;
+	width:100%;
 }
 #sessionTitle{
 	height:auto;
-
 }
 #sessionTitle h3{
-	margin-top:2%;
+	margin:0%;
 	padding:0%;
 }
 hr{
@@ -44,7 +64,7 @@ hr{
 }
 #bottomHalf{
 	position:absolute; 
-	bottom:5%;
+	bottom:1%;
 }
 
 #allTracks{
