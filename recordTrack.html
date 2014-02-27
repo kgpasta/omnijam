@@ -9,8 +9,10 @@
 		<script src = "js/jquery/jquery-1.11.0.js"></script>
  		<script src = "js/bootstrap/bootstrap.js"></script>
  		<script src = 'js/RecordTrack.js'></script>
+ 		<script src = 'js/ChatBox.js'></script>
  		<script>
  			RecordTrack.init();
+ 			ChatBox.init();
  		</script>
 	</head>
 	<body>
@@ -80,9 +82,11 @@
 				
 			</div>
 			<div class = 'col-md-3' id = 'chatBox'>
-				<div class = 'row col-md-12' id="#chatText">
+				<div class = 'col-md-12' id="chatText">
+
 				</div>
-				<div class ='row col-md-12' id='#chatInput'>
+				<div class ='col-md-12' id='chatInput'>
+					<hr>
 					<textarea></textarea>
 				</div>
 			</div>
