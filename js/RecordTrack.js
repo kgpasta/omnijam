@@ -62,6 +62,9 @@ var RecordTrack = (function($){
 
   		$(this).html(e.originalEvent.dataTransfer.getData('text/html'));
   		$("#newTrack").empty();
+  		$("#stop").hide();
+  		$("#record").hide();
+  		$("#addTrack").show();
 	},
 /*	handleRecord = function(e){
 		navigator.getMedia = ( 
