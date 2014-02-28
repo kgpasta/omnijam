@@ -26,3 +26,9 @@
 	padding-right: 6px;
 	float:right;
 }
+hr{
+	margin-top: 7px;
+}
+.active{
+	color:teal;
+}
