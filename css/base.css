@@ -19,6 +19,9 @@
 .logo>a:hover{
 	text-decoration: none !important;
 }
+#collabDrop, p{
+	padding-left:3px;
+}
 .container{
 	padding-left: 1.8%;
 }
