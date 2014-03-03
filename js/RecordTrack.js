@@ -17,7 +17,7 @@ var RecordTrack = (function($){
 			$("addTrack").hide();
 			$("#stop").show();
 			$(".waveform>img").hide();
-			alert("Track is being Recorded!");
+			alert("Track is being recorded! Press stop to finish recording.");
 		});
 	},
 	stopTrack = function(){
