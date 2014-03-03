@@ -45,7 +45,7 @@ var RecordTrack = (function($){
 		});
 	},
 	handleDragStart = function(e){
-		$("#allTracks").css('background-color','#fafafa');
+		$($("#allTracks").children("div")[0]).css('background-color','#DFF5F5');
 
 
 		e.originalEvent.dataTransfer.effectAllowed = 'move';
@@ -59,14 +59,19 @@ var RecordTrack = (function($){
   		return false;
 	},
 	handleDragEnd = function(e){
-		$("#allTracks").css('background-color','white');
+		$($("#allTracks").children("div")[0]).css('background-color','white');
 	},
 	handleDrop = function(e){
 		if (e.stopPropagation) {
     		e.stopPropagation(); // stops the browser from redirecting.
   		}
 
-  		$(this).prepend(e.originalEvent.dataTransfer.getData('text/html'));
+  		var container = $($(this).children("div")[0]);
+  		container.prepend(e.originalEvent.dataTransfer.getData('text/html'));
+
+  		$(container.children('#newTrackBox')[0]).css('height','20%');
+  		$($(container.children('#newTrackBox')[0]).children('input')[0]).attr('value','oldTrack');
+
   		$("#newTrack").next(".waveform").empty();
   		$("#newTrack").hide();
   		$("#stop").hide();
