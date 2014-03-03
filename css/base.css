@@ -45,6 +45,56 @@ html,body{
 	font-family: PT Sans, Helvetica;
 	width:100%;
 }
+
+
+#backgroundImg { 
+	height: 91.6%;
+	background-image: url(../assets/acoustic.jpg);
+	background-size: cover;
+	margin-right: 0px !important;
+	z-index: 1;
+	position: relative;
+}
+
+#backgroundSection {
+	height: 50%;
+	width:100%;
+	margin-top: 10%;
+	z-index: 2;
+	position: absolute;
+}
+#backgroundHeader {
+	background-color:rgba(0,0,0,0.5);
+	height: auto;
+	width: 70%;
+	z-index: 3;
+	position: absolute;
+	margin-left: 15%;
+	border-radius: 15px;
+}
+
+#backgroundContent {
+	margin-bottom: 2.5%;
+}
+
+#backgroundText {
+	color: white;
+	margin-left: 5%;
+	width: 40%;
+}
+
+.backgroundTextLine {
+	margin-top: 6%;
+	color: white;
+}
+
+#formContainer {
+	margin-left: 50%;
+	margin-right: 5%;
+	margin-top: -19%;
+	width: 45%;
+}
+
 a{
 	color:#303030;
 }
