@@ -60,11 +60,13 @@ var RecordTrack = (function($){
     		e.stopPropagation(); // stops the browser from redirecting.
   		}
 
-  		$(this).html(e.originalEvent.dataTransfer.getData('text/html'));
-  		$("#newTrack").empty();
+  		$(this).prepend(e.originalEvent.dataTransfer.getData('text/html'));
+  		$("#newTrack").next(".waveform").empty();
+  		$("#newTrack").hide();
   		$("#stop").hide();
   		$("#record").hide();
   		$("#addTrack").show();
+
 	},
 /*	handleRecord = function(e){
 		navigator.getMedia = ( 
