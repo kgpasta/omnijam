@@ -25,6 +25,12 @@ var RecordTrack = (function($){
 		});
 	},
 	trashTrack = function(){
+		$("#trash").on("click",function(){
+			$("input:checkbox[name=type]:checked").each(function(){
+				$(this).remove();
+			});
+		});
+
 	},
 	playTrack = function(){
 		$("#play").on("click",function(){
@@ -39,7 +45,7 @@ var RecordTrack = (function($){
 		});
 	},
 	handleDragStart = function(e){
-		$("#allTracks").css('background-color','teal');
+		$("#allTracks").css('background-color','#fafafa');
 
 
 		e.originalEvent.dataTransfer.effectAllowed = 'move';

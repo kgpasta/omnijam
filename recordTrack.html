@@ -49,37 +49,37 @@
 					<hr>
 				</div>
 				<div class = "row col-md-12" id = 'allTracks'><!-- Where all previously recorded tracks are!-->
-					<center><h3>Drag and Drop to add track to center</h3></center>
+					<div style='background-color: #fafafa; height:100%'>
+						<center><h3>Drag and Drop to add track to center</h3></center>
+					</div>
 				</div>
 
-				<div class ='col-md-12' id ='bottomHalf'>
-
-					<div class ="col-md-12" id='newTrack' draggable="true"><!-- The location of where the new track section comes up !-->
-						<div class = 'col-md-12'>
-								<input type="checkbox" name="newTrackCheckBox" value="selected">
-								Artist - <b> Song </b>
-								<div class="waveform">
-								</div>
+				<div class ="col-md-12" id='newTrack' draggable="true"><!-- The location of where the new track section comes up !-->
+					<div class = 'col-md-12' style='height: 100%'>
+						<input type="checkbox" name="newTrackCheckBox" value="selected">
+						Username - <b> Track Name </b>
+						<div class="waveform">
+							<img src = 'assets/sample_waveform.png'/>
 						</div>
 					</div>
-				
-					<div class = 'row' id = 'trackControl'>
-						<hr>
-						<div class = 'col-md-4'>
+				</div>
+				<div class = 'row col-md-12' id = 'trackControl'>
+						<div class ='row col-md-6 col-md-offset-3'>
+							<hr>
+						</div>
+						<div class = 'col-md-2 col-md-offset-3'>
 							<span id ='addTrack' class = 'glyphicon glyphicon-plus'></span>
 							<span id='record' class='glyphicon glyphicon-record'></span>
 							<span id='stop' class='glyphicon glyphicon-stop'></span>
 						</div>
-						<div class = 'col-md-4'>
+						<div class = 'col-md-2'>
 							<span id ='play' class = 'glyphicon glyphicon-play'></span>
 							<span id ='pause' class = 'glyphicon glyphicon-pause'></span>
 						</div>
-						<div class = 'col-md-4'>
-							<span class = 'glyphicon glyphicon-trash'></span>
+						<div class = 'col-md-2'>
+							<span id='trash' class = 'glyphicon glyphicon-trash'></span>
 						</div>
-					</div>
 				</div>
-				
 			</div>
 			<div class = 'col-md-2' id = 'chatBox'>
 				<div class = 'col-md-12' id="chatText">
