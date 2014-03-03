@@ -7,8 +7,8 @@ var RecordTrack = (function($){
 /*
 			$(this).attr("id","recordTrack");
 			$("#recordTrack").bind('click',handleRecord);*/
-			$(this).load();
 			$("#newTrack").show();
+			$(".waveform>img").hide();
 		});
 	},
 	recordTrack = function(){
@@ -16,18 +16,29 @@ var RecordTrack = (function($){
 			$(this).hide();
 			$("addTrack").hide();
 			$("#stop").show();
+			$(".waveform>img").hide();
+			alert("Track is being Recorded!");
 		});
 	},
 	stopTrack = function(){
 		$("#stop").on("click",function(){
 			$(this).hide();
 			$("#record").show();
+			$(".waveform>img").show();
 		});
 	},
 	trashTrack = function(){
 		$("#trash").on("click",function(){
-			$("input:checkbox[name=type]:checked").each(function(){
-				$(this).remove();
+			$("input:checkbox:checked").each(function(){
+				if($(this).val()==='newTrack'){
+					$("#newTrack").hide();
+					$(this).attr("checked",false);
+					$("#record").hide();
+					$("#stop").hide();
+					$("#addTrack").show();
+				}
+				else
+					$(this).parent().remove();
 			});
 		});
 
@@ -100,11 +111,13 @@ var RecordTrack = (function($){
 			$("#record").hide();
 			$("#stop").hide();
 			$("#pause").hide();
+			$(".waveform>img").hide();
 			createTrack();
 			recordTrack();
 			stopTrack();
 			playTrack();
 			pauseTrack();
+			trashTrack();
 
 			//Drag and drop Event Handling
 			$("#newTrack").bind('dragstart',handleDragStart);
