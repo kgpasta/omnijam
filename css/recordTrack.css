@@ -70,8 +70,10 @@ hr{
 
 #allTracks{
 	height:60%;
+}
+
+#allTracks>div{
 	overflow-y:scroll;
-	
 }
 
 .waveform{

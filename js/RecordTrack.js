@@ -36,12 +36,20 @@ var RecordTrack = (function($){
 		$("#play").on("click",function(){
 			$(this).hide();
 			$("#pause").show();
+
+			timer = window.setInterval(function(){
+				var time = parseInt($("#time").text());
+				time++;
+				$("#time").text(time + " seconds");
+			},1000);
 		});
 	},
 	pauseTrack = function(){
 		$("#pause").on("click",function(){
 			$(this).hide();
 			$("#play").show();
+
+			window.clearInterval(timer);
 		});
 	},
 	handleDragStart = function(e){
