@@ -61,7 +61,6 @@ hr{
 	margin-top:10px;
 }
 #newTrack{
-	border:2px solid black;
 }
 #bottomHalf{
 	position:absolute; 
@@ -69,6 +68,13 @@ hr{
 }
 
 #allTracks{
-	height:50%;
+	height:65%;
+	overflow-y:scroll;
 }
 
+.waveform{
+	border-style: solid;
+	border-radius: 1px;
+	width:100%;
+	height:50px;
+}
